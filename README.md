@@ -53,3 +53,4 @@ $ yarn run test:cov
   "phoneNumber": 1234567890
 }
 ```
+- Refer to postman collection added in github

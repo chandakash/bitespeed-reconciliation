@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "df6c1bb6-6a8e-4a04-9c22-69e54d8849cc",
+		"name": "BiteSpeed",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14000540"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"akash@gmail.com\",\n  \"phoneNumber\": 1234567890\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reoy9xg9oe.execute-api.ap-south-1.amazonaws.com/contact/identify",
+					"protocol": "https",
+					"host": [
+						"reoy9xg9oe",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"contact",
+						"identify"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
