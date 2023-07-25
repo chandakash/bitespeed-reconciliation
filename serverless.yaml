@@ -1,0 +1,30 @@
+service: nestjs-reconciliation-serverless
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  architecture: arm64
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'ap-south-1'}
+  memorySize: 256
+  logRetentionInDays: 1
+  timeout: 30
+  environment:
+    PG_HOST: ep-muddy-shadow-317089.us-east-2.aws.neon.tech
+    PG_USER: chandakash
+    PG_PASSWORD: kZ2JPuK6tclr
+    PG_DATABASE: reconciliationdb
+
+functions:
+  api:
+    handler: dist/lambda.handler
+    events:
+      - httpApi:
+          method: any
+          path: /{proxy+}
+
+plugins:
+  - serverless-jetpack
+  - serverless-offline

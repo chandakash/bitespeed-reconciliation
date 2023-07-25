@@ -26,10 +26,21 @@
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^10.0.5",
     "@nestjs/typeorm": "^10.0.0",
+    "@vendia/serverless-express": "^4.10.4",
+    "config": "^3.3.9",
+    "fast-safe-stringify": "^2.1.1",
+    "iterare": "^1.2.1",
     "pg": "^8.11.1",
+    "plugin": "^0.3.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
-    "typeorm": "^0.3.17"
+    "serverless": "^3.33.0",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-jetpack": "^0.11.2",
+    "serverless-offline": "^12.0.4",
+    "tslib": "^2.6.1",
+    "typeorm": "^0.3.17",
+    "uid": "^2.0.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.1.8",
